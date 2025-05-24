@@ -8,6 +8,8 @@ from frappe.utils.file_manager import get_file_path
 from frappe.model.document import Document
 from PIL import Image
 from frappe.utils import add_days
+from frappe.utils import get_url_to_form
+
 
 
 class InvoiceUpload(Document):
@@ -115,7 +117,8 @@ class InvoiceUpload(Document):
         pi.calculate_taxes_and_totals()
         pi.insert(ignore_permissions=True)
 
-        frappe.msgprint(f"{pi.doctype} <a href='/app/{pi.doctype}/{pi.name}'>{pi.name}</a> created")
+        frappe.msgprint(f"<a href='{get_url_to_form(pi.doctype, pi.name)}'>{pi.name}</a> created")
+
 
     def get_expense_account(self):
         company = frappe.defaults.get_user_default("Company")

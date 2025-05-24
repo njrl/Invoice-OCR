@@ -22,9 +22,9 @@
   },
   {
    "fieldname": "party",
-   "fieldtype": "Link",
+   "fieldtype": "Dynamic Link",
    "label": "Party",
-   "options": "Supplier"
+   "options": "party_type"
   },
   {
    "allow_on_submit": 1,
@@ -64,7 +64,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-24 01:13:17.961557",
+ "modified": "2025-05-24 23:32:12.597184",
  "modified_by": "Administrator",
  "module": "Invoice Ocr",
  "name": "Invoice Upload",
