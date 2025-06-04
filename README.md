@@ -44,7 +44,7 @@ sudo apt update
 sudo apt install -y poppler-utils tesseract-ocr
 
 cd ~/frappe-bench/apps
-bench get-app https://github.com/YOUR-USERNAME/invoice_ocr.git
+bench get-app https://github.com/Mohtashim-1/invoice_ocr.git
 
 # Activate your Frappe virtual environment
 source ~/frappe-bench/env/bin/activate
