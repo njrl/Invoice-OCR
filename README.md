@@ -39,11 +39,12 @@ Automatically extract invoice data from scanned **PDF** or **image** files and g
 Install required system packages:
 
 ```bash
+
 sudo apt update
 sudo apt install -y poppler-utils tesseract-ocr
 
 cd ~/frappe-bench/apps
-git clone https://github.com/YOUR-USERNAME/invoice_ocr.git
+bench get-app https://github.com/YOUR-USERNAME/invoice_ocr.git
 
 # Activate your Frappe virtual environment
 source ~/frappe-bench/env/bin/activate
