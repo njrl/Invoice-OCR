@@ -39,27 +39,33 @@ Automatically extract invoice data from scanned **PDF** or **image** files and g
 Install required system packages:
 
 ```bash
-
 sudo apt update
 sudo apt install -y poppler-utils tesseract-ocr
 
-cd ~/frappe-bench/apps
-bench get-app https://github.com/Mohtashim-1/invoice_ocr.git
+# Get the app from GitHub
 
+bench get-app https://github.com/Mohtashim-1/Invoice-OCR.git
 # Activate your Frappe virtual environment
 source ~/frappe-bench/env/bin/activate
 
 # Install required Python libraries
-pip install -r invoice_ocr/requirements.txt
+pip install -r apps/invoice_ocr/requirements.txt
 
-# Or manually:
-
+# Or manually install requirements
 pip install pytesseract pdf2image Pillow PyPDF2
 
-# 4. Install the app on your site
+# Deactivate virtual enviroment
+deactivate
 
+# 4. Install the app on your site
 cd ~/frappe-bench
-bench new-site invoice_ocr
-bench --site invoice_ocr install-app invoice_ocr
+bench --site yoursite.com install-app invoice_ocr
+
+#Apply necessary migrations
 bench migrate
-bench restart
+
+#Restart bench or supervisor
+bench restart #for production
+bench start #for development
+
+#Video tutorials
