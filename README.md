@@ -69,3 +69,5 @@ bench restart #for production
 bench start #for development
 
 #Video tutorials
+will be added shortly
+
