@@ -2,6 +2,7 @@
 
 Automatically extract invoice data from scanned **PDF** or **image** files and generate Sales or Purchase Invoices in ERPNext using Tesseract OCR.
 
+**This project is supported by AgroVisions — thank you for powering open source!**
 ---
 
 ## 🚀 Features
@@ -72,4 +73,4 @@ bench start #for development
 will be added shortly
 
 
-> **This project is supported by _AgroVisions_ — thank you for powering open source!**
+
