@@ -71,3 +71,5 @@ bench start #for development
 #Video tutorials
 will be added shortly
 
+
+> **This project is supported by _AgroVisions_ — thank you for powering open source!**
